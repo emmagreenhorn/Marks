@@ -3,13 +3,11 @@ import java.io.*;
 public class SCHOOL
 {
     
-    private SCHOOL PupilList[];
+    private MEMBER PupilList[];
     
     int noOfPupils;
     FILEREADCSV PupilFile;
-   
-    
-    
+
     
     public SCHOOL()
     { 
@@ -20,10 +18,7 @@ public class SCHOOL
     public void processPupils()  throws IOException
     {
         setUpPupilList();
-        
-        
-        
-       
+    
         
     }
 
@@ -39,6 +34,14 @@ public class SCHOOL
         noOfPupils = dataRows.length - 1;
         //update user with number of rows with membership details
         System.out.println("**" + noOfPupils + " rows read.\n\n");
+        
+        //prepare array for Pupil
+        PupilList = new MEMBER[noOfPupils];
+        
+        for  ( int i= 0; i < noOfPupils; i++)  {
+            PupilList[i] = new MEMBER();
+            PupilList[i].readMemberDetails(dataRows[i+1]);
+        }
     }
         
     

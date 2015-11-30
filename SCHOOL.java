@@ -48,5 +48,5 @@ public class SCHOOL
     public void countOKmark()
     {
         //placeholder 
-    }
+    } 
 }

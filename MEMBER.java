@@ -60,6 +60,10 @@ public class MEMBER
 
     }
   
+        public float getmark()
+        {
+            return mark;
+        }
         
-    
+       
     } 

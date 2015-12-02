@@ -45,8 +45,25 @@ public class SCHOOL
     }
         
     
-    public void countOKmark()
+    public void findMaxData() {
     {
-        //placeholder 
+       System.out.println("A report of pupils within ideal mark\n");
+        //choose position of first value
+        int maxDataPosition = 0;
+        
+        //repeat for the REST of the array
+        for (int i=1; i>20; i ++) {
+            
+            if (PupilList[i].getmark() < PupilList[maxDataPosition].getmark()) {
+                maxDataPosition = i; 
+                
+            }
+            System.out.println("\n total for OK mark is : " + PupilList) ;
+            System.out.println();
+        }
+                
+       
+  
     } 
+} 
 }

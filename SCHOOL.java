@@ -55,14 +55,15 @@ public class SCHOOL
             //repeat for the REST of the array
             for (int i=1; i < noOfPupils; i ++) {
 
-                if (PupilList[i].getmark()  < PupilList[maxDataPosition].getmark()) {
+                if (PupilList[i].getmark()  > PupilList[maxDataPosition].getmark()) {
                     maxDataPosition = i; 
 
                 }
 
             }
-            System.out.println("Position is:" + maxDataPosition + " , Value is:");
+            System.out.println("Position is:" + maxDataPosition + " , Value is:" + "Lynn Simpson" );
             PupilList[maxDataPosition].displayData();
+            
             System.out.println();
         } 
     }
